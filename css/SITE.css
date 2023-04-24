@@ -1,0 +1,237 @@
+@import url('./fonts.css');
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: #9e9e9e;
+}
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top:0;
+    width: 100%;
+    margin-bottom: 1rem;
+
+    box-shadow: 2px -3px 20px 0px;
+    z-index: 1000;
+  }
+nav > ul>  li {
+    
+    float: left;
+  }
+
+nav > ul>  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 160px;
+    height: 50px;
+  }
+  
+nav > ul > li a:hover {
+    background-color: #111;
+  }
+
+ .active {
+  background-color: #111;
+}
+
+body {
+  font-family: 'Comfortaa', cursive;
+  background: linear-gradient(to bottom right, #333333, #ffffff);
+}
+
+#contenaire {
+  margin-top: 6rem;
+  font-family: 'Truculenta', sans-serif;
+  height: 95vh;
+}
+h1 p {
+  font-family: 'Truculenta', sans-serif;
+}
+
+.text {
+  width: 90% !important;
+  padding: 3rem;
+  font-family: 'Comfortaa', cursive;
+}
+
+.text > h2, h1{
+  text-align: center;
+}
+
+.text > ul {
+  margin-top: 3rem;
+    margin-right: 1rem;
+    margin-left: 6rem;
+} 
+ 
+.load{
+  animation: 2s;
+}
+
+.slider {
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 100vh;
+animation: slide 30s infinite;
+margin-top: -3rem;
+}
+
+.content {
+  width:100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Reggae One', cursive;
+  color: white;
+}
+
+.principal{
+  left : 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  letter-spacing: 5px;
+  text-align: center;
+
+}
+.principal h1{
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+.principal p{
+  font-size: 20px;
+}
+@keyframes slide{
+  0%{
+    background-image: url('../imgs/img10.jpg');
+  }
+  20%{
+    background-image: url('../imgs/img5.jpg');
+  }
+  20.01%{
+    background-image: url('../imgs/img3.jpg');
+  }
+  40%{
+    background-image: url('../imgs/img8.jpg');
+  }
+  40.01%{
+    background-image: url('../imgs/img6.jpg');
+  }
+  60%{
+    background-image: url('../imgs/img6.jpg');
+  }
+  60.01%{
+    background-image: url('../imgs/img1.jpg');
+  }
+  80%{
+    background-image: url('../imgs/img4.jpg');
+  }
+  80.01%{
+    background-image: url('../imgs/img7.jpg');
+  }
+  100%{
+    background-image: url('../imgs/img8.jpg');
+  }
+}
+
+
+/* Les cartes */
+
+.cards {
+  width: 80%;
+  margin: 0 auto;
+  display :flex;
+  justify-content:space-evenly;
+  flex-wrap:wrap;
+  padding-bottom: 5rem;
+}
+
+.card{
+  margin : auto;
+  width: 350px;
+  overflow : hidden;
+  border-radius : 20px;
+  background : white;
+  margin-top:50px;
+  transition: all .2s;
+  box-shadow:5px 5px 15px rgba(0,0,0, .3);
+}
+
+.card:hover {
+  box-shadow:5px 5px 25px rgba(0,0,0, .5);
+}
+
+.card:hover .icon i{
+  
+}
+
+.img-cover{
+  position: relative;
+}
+
+.card img{
+  width: 350px;
+  height:239px;
+  object-fit:cover;
+}
+
+.icon{
+  position:absolute;
+  top:0;
+  padding : 25px;
+  right:0;
+  border-bottom-left-radius:20px;
+  backdrop-filter: blur(20px);
+  background-color: rgb(247 247 247);
+  cursor: pointer;
+}
+
+.desc{
+  padding : 1.5em ;
+  text-align: center;
+}
+.desc h1{
+  display:inline;
+}
+.tdesc{
+  margin-bottom:40px;
+  width:100%;
+  height:50px;
+  overflow: auto;
+}
+
+.desc a:hover{
+  background-color: SteelBlue;
+}
+.desc a:hover svg{
+  
+}
+
+@keyframes iconjln{
+  0%, 100% {
+    opacity : 1;
+    transform: translateX(0%);
+  }
+  50%{
+    opacity:0;
+    transform: translateX(100%);
+  }
+  70%{
+    opacity:0;
+    transform:translateX(-100%);
+  }
+}
+
